@@ -3,17 +3,18 @@ const express = require('express'); //  there are two methods to import file in 
 // if we want to use this syntax then there is some changes we should do 
 // i.e is in json use "type":"module"
 
+
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Server is Ready')
-});
+// app.get('/', (req, res) => {
+//     res.send('Server is Ready')
+// });
 
 //get a list of 5 jokes
 
 // json formater is one website use it to know how to json convert into another format
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
     const jokes = [
         {
             id: 1,
